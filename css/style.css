@@ -246,6 +246,10 @@ textarea {
 }
 
 /***/
+:root {
+  --DARK-BLUE: #16242f;
+}
+
 
 .page {
   font-family: sans-serif;
@@ -253,17 +257,83 @@ textarea {
 
 .section {
   display: flex;
+  flex-flow: column;
   border: solid red 1px;
   width: 100vw;
 }
 
 .container {
-  display: flex;
+  display:grid;
   border: solid blue 1px;
+  margin:auto;
   max-width: 70%;
 }
 
 .content {
-  display: flex;
   border: solid yellow 1px;
+  padding: 1rem;
+}
+
+/* GROUP GRID CLASSES */
+.title-span4 {
+  grid-column: span 4;
+}
+
+.title-span3 {
+  grid-column: span 3;
+}
+
+.title-span2 {
+  grid-column: span 2;
+}
+
+.col4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.col3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid3x2 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/***/
+
+.footer {
+  background-color: var(--DARK-BLUE);
+  color: white;
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-top p {
+  font-style: italic;
+}
+
+.person {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.tweet {
+  display: flex;
+  flex-flow: row;
+}
+
+.twt-handle {
+  color: aqua;
 }
