@@ -248,6 +248,7 @@ textarea {
 /***/
 :root {
   --DARK-BLUE: #16242f;
+  --SOFT-RED: #de6262;
 }
 
 
@@ -266,7 +267,7 @@ textarea {
   display:grid;
   border: solid blue 1px;
   margin:auto;
-  max-width: 70%;
+  width: 70%;
 }
 
 .content {
@@ -336,4 +337,13 @@ textarea {
 
 .twt-handle {
   color: aqua;
+}
+
+.email-button {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  background-color: var(--SOFT-RED);
+  color: white;
 }
