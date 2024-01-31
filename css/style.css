@@ -251,7 +251,6 @@ textarea {
   --SOFT-RED: #de6262;
 }
 
-
 .page {
   font-family: sans-serif;
 }
@@ -267,7 +266,7 @@ textarea {
   display:grid;
   border: solid blue 1px;
   margin:auto;
-  width: 70%;
+  width: 940px;
 }
 
 .content {
@@ -275,17 +274,24 @@ textarea {
   padding: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
 /* GROUP GRID CLASSES */
 .title-span4 {
   grid-column: span 4;
+  text-align: center;
 }
 
 .title-span3 {
   grid-column: span 3;
+  text-align: center;
 }
 
 .title-span2 {
   grid-column: span 2;
+  text-align: center;
 }
 
 .col4 {
@@ -299,11 +305,6 @@ textarea {
 .col2 {
   grid-template-columns: 1fr 1fr;
 }
-
-.grid3x2 {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
 /***/
 
 .footer {
@@ -312,7 +313,7 @@ textarea {
 }
 
 .footer p {
-  font-size: 0.8rem;
+  font-size: 8pt;
 }
 
 .footer h3 {
