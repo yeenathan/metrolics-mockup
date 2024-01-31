@@ -370,6 +370,7 @@ p {
 
 .header {
   display: flex;
+  padding: 0;
 }
 
 .logo {
@@ -392,6 +393,10 @@ p {
   width: 1100px;
 }
 
+.content.banner {
+  margin: 3% 0;
+}
+
 .metrolics {
   color: #1eafde;
 }
@@ -399,11 +404,11 @@ p {
 /* IMAGES */
 
 #watermark-logo {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 #nav-bar {
-  max-width: 95%;
+  max-width: 90%;
 }
 
 #carousel-image {
