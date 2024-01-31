@@ -274,8 +274,15 @@ textarea {
   padding: 1rem;
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 /* GROUP GRID CLASSES */
@@ -347,4 +354,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   background-color: var(--SOFT-RED);
   color: white;
+}
+
+/***/
+
+.ttwd {
+  justify-content: center;
+  text-align: center;
 }
