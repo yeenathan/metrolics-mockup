@@ -283,6 +283,11 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 10pt;
 }
 
 /* GROUP GRID CLASSES */
@@ -367,4 +372,49 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
+.logo {
+  max-width: 25%;
+  align-items: flex-end;
+}
+
+.nav {
+  max-width: 75%;
+  justify-content: flex-end;
+}
+
+.body.crsl {
+  background-color: #ebebeb;
+}
+
+.carousel {
+  border: solid blue 1px;
+  margin:auto;
+  width: 1100px;
+}
+
+.metrolics {
+  color: #1eafde;
+}
+
 /* IMAGES */
+
+#watermark-logo {
+  max-width: 100%;
+}
+
+#nav-bar {
+  max-width: 95%;
+}
+
+#carousel-image {
+  max-width: 100%;
+}
+
+#web-sol, #photog, #web-dev, #web-des {
+  max-width: 50%;
+  margin: 5%;
+}
+
+#samp-img-post {
+  max-width: 100%;
+}
