@@ -252,26 +252,27 @@ textarea {
 }
 
 .page {
-  font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .section {
   display: flex;
   flex-flow: column;
-  border: solid red 1px;
+  /* border: solid red 1px; */
   width: 100vw;
+  margin: 1rem 0;
 }
 
 .container {
   display:grid;
-  border: solid blue 1px;
+  /* border: solid blue 1px; */
   margin:auto;
   width: 940px;
 }
 
 .content {
-  border: solid yellow 1px;
-  padding: 1rem;
+  /* border: solid yellow 1px; */
+  padding: .5rem;
 }
 
 .banner {
@@ -280,14 +281,24 @@ textarea {
   align-items: center;
   text-align: center;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+/* FONTS */
+h1, h2, h4, h5, h6 {
+  font-weight: lighter;
   margin: 0;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: medium;
 }
 
 p {
   font-size: 10pt;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* GROUP GRID CLASSES */
@@ -317,11 +328,18 @@ p {
 .col2 {
   grid-template-columns: 1fr 1fr;
 }
+
+.photogrid {
+  display: grid;
+  gap: 10px;
+}
+
 /***/
 
 .footer {
   background-color: var(--DARK-BLUE);
   color: white;
+  text-align: left;
 }
 
 .footer p {
@@ -330,10 +348,13 @@ p {
 
 .footer h3 {
   font-size: 1.2rem;
-  font-weight: 700;
 }
 
-.footer-top p {
+.footer-heading {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
 }
 
@@ -364,7 +385,6 @@ p {
 /***/
 
 .ttwd {
-  justify-content: center;
   text-align: center;
 }
 
@@ -401,10 +421,6 @@ p {
   color: #1eafde;
 }
 
-.ttwd h3 {
-  font-weight: bold;
-}
-
 /* IMAGES */
 
 #watermark-logo {
@@ -424,6 +440,6 @@ p {
   margin: 5%;
 }
 
-#samp-img-post {
+.samp-img-post {
   max-width: 100%;
 }
