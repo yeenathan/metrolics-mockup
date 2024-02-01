@@ -230,6 +230,13 @@ p {
 }
 
 @media (max-width: 414px) {
+  .ttwd {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
   .crsl {
     display: none;
   }
