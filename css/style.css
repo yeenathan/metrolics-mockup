@@ -242,6 +242,10 @@ p {
 }
 
 @media (max-width: 414px) {
+  .crsl {
+    display: none;
+  }
+
   .title-span4 {
     grid-column: 1;
   }
@@ -268,5 +272,17 @@ p {
   
   .col2 {
     grid-template-columns: 1fr;
+  }
+
+  .flickr {
+    display: none;
+  }
+
+  .newsletter {
+    display: none;
+  }
+
+  .about-us {
+    display: none;
   }
 }
