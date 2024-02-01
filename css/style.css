@@ -3,6 +3,10 @@
   --SOFT-RED: #de6262;
 }
 
+img {
+  max-width: 100%;
+}
+
 .page {
   font-family: 'Ubuntu', sans-serif;
 }
