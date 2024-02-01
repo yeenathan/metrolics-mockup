@@ -87,6 +87,10 @@ p {
   font-size: 10pt;
 }
 
+.footer-heading img {
+  margin-right: 1rem;
+}
+
 .person {
   display: flex;
   justify-content: start;
@@ -96,6 +100,7 @@ p {
 .tweet {
   display: flex;
   flex-flow: row;
+  align-items: center;
 }
 
 .twt-handle {
@@ -158,10 +163,6 @@ p {
   max-width: 90%;
 }
 
-.nav-bar {
-  max-width: 90%;
-}
-
 .carousel-image {
   max-width: 100%;
 }
@@ -177,6 +178,11 @@ p {
 
 .misc-content {
   max-width: 100%;
+}
+
+.tweet-icon {
+  max-height: 34px;
+  margin: 0 1rem;
 }
 
 /* BREAKPOINTS */
@@ -289,7 +295,16 @@ p {
     display: none;
   }
 
-  .about-us {
+  .about-us-text {
     display: none;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials img {
+    margin: 2px;
   }
 }
