@@ -167,7 +167,6 @@ p {
 }
 
 .ttwd-image {
-  max-width: 50%;
   margin: 5%;
 }
 
@@ -209,6 +208,10 @@ p {
   .col2 {
     grid-template-columns: 1fr 1fr;
   }
+
+  .img-wide {
+    display: none;
+  }
 }
 
 @media (min-width: 415px) and (max-width: 940px) {
@@ -239,9 +242,29 @@ p {
   .col2 {
     grid-template-columns: 1fr;
   }
+  
+  .img-first {
+    display: none;
+  }
+
+  .img-wide {
+    grid-column: span 2;
+  }
+
+  .sample-img-post-wide {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 414px) {
+  .thingsofabove {
+    display: none;
+  }
+  
+  .img-wide {
+    display: none;
+  }
+  
   .ttwd {
     display: flex;
     flex-flow: row;
