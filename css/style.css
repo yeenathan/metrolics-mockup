@@ -267,7 +267,8 @@ textarea {
   display:grid;
   /* border: solid blue 1px; */
   margin:auto;
-  width: 940px;
+  max-width: 940px;
+  text-align: center;
 }
 
 .content {
@@ -301,39 +302,6 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* GROUP GRID CLASSES */
-.title-span4 {
-  grid-column: span 4;
-  text-align: center;
-}
-
-.title-span3 {
-  grid-column: span 3;
-  text-align: center;
-}
-
-.title-span2 {
-  grid-column: span 2;
-  text-align: center;
-}
-
-.col4 {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.col3 {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.col2 {
-  grid-template-columns: 1fr 1fr;
-}
-
-.photogrid {
-  display: grid;
-  gap: 10px;
-}
-
 /***/
 
 .footer {
@@ -355,7 +323,14 @@ p {
   flex-flow: row;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-heading p {
   font-style: italic;
+}
+
+.footer-heading h3 {
+  font-size: 10pt;
 }
 
 .person {
@@ -383,10 +358,6 @@ p {
 }
 
 /***/
-
-.ttwd {
-  text-align: center;
-}
 
 .header {
   display: flex;
@@ -421,6 +392,12 @@ p {
   color: #1eafde;
 }
 
+.photogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
 /* IMAGES */
 
 #watermark-logo {
@@ -442,4 +419,83 @@ p {
 
 .samp-img-post {
   max-width: 100%;
+}
+
+/* responsiveness */
+@media (min-width: 940px) {
+  .title-span4 {
+    grid-column: span 4;
+  }
+  
+  .title-span3 {
+    grid-column: span 3;
+  }
+  
+  .title-span2 {
+    grid-column: span 2;
+  }
+  
+  .col4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .col3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .col2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 940px) {
+  .title-span4 {
+    grid-column: span 2;
+  }
+  
+  .title-span3 {
+    grid-column: span 2;
+  }
+  
+  .title-span2 {
+    grid-column: span 1;
+  }
+  
+  .col4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .col3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .col2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 414px) {
+  .title-span4 {
+    grid-column: 1;
+  }
+  
+  .title-span3 {
+    grid-column: 1;
+  }
+  
+  .title-span2 {
+    grid-column: 1;
+  }
+  
+  .col4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .col3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .col2 {
+    grid-template-columns: 1fr;
+  }
 }
