@@ -190,7 +190,7 @@ p {
 
 /* BREAKPOINTS */
 
-@media (min-width: 940px) {
+@media screen and (min-width: 64em) {
   .burger {
     display: none;
   }
@@ -228,7 +228,7 @@ p {
   }
 }
 
-@media (min-width: 415px) and (max-width: 940px) {
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .burger {
     display: none;
   }
@@ -274,7 +274,7 @@ p {
   }
 }
 
-@media (max-width: 414px) {
+@media screen and (max-width: 39.9375em) {
   .nav {display: none;}
   
   .thingsofabove {
