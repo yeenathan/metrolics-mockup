@@ -1,247 +1,347 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+:root {
+  --DARK-BLUE: #16242f;
+  --SOFT-RED: #de6262;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
+.page {
+  font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+.section {
+  display: flex;
+  flex-flow: column;
+  /* border: solid red 1px; */
+  width: 100vw;
+  margin: 1rem 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
+.container {
+  display:grid;
+  /* border: solid blue 1px; */
+  margin:auto;
+  max-width: 940px;
+  text-align: center;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+.content {
+  /* border: solid yellow 1px; */
+  padding: .5rem;
 }
 
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
+/* FONTS */
+
+h1, h2, h4, h5, h6 {
+  font-weight: lighter;
   margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+h2 {
+  font-size: xx-large;
+  font-weight: lighter;
 }
 
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
+h3 {
+  font-weight: medium;
 }
 
-.clearfix::after {
-  clear: both;
+p {
+  font-size: 10pt;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+/***/
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.footer {
+  background-color: var(--DARK-BLUE);
+  color: white;
+  text-align: left;
+  margin-bottom: 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.footer p {
+  font-size: 8pt;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+.footer h3 {
+  font-size: 1.2rem;
+}
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+.footer-heading {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-heading p {
+  font-style: italic;
+}
+
+.footer-heading h3 {
+  font-size: 10pt;
+}
+
+.footer-heading img {
+  margin-right: 1rem;
+}
+
+.person {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.tweet {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.twt-handle {
+  color: aqua;
+}
+
+.email-button {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  background-color: var(--SOFT-RED);
+  color: white;
+}
+
+/***/
+
+.header {
+  display: flex;
+  padding: 0;
+}
+
+.header.container {
+  align-items: flex-end;
+}
+
+.watermark-logo {
+  max-height: 76px;
+}
+
+.nav {
+  justify-content: flex-end;
+}
+
+.body.crsl {
+  background-color: #ebebeb;
+}
+
+.carousel {
+  border: solid blue 1px;
+  margin:auto;
+  width: 1100px;
+}
+
+.content.banner {
+  margin: 3% 0;
+}
+
+.metrolics {
+  color: #1eafde;
+}
+
+.clients img {
+  max-width: 100%;
+}
+
+.photogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+/* IMAGES */
+
+.carousel-image {
+  max-width: 100%;
+}
+
+.ttwd-image {
+  margin: 5%;
+}
+
+.samp-img-post {
+  max-width: 100%;
+}
+
+.misc-content {
+  max-width: 100%;
+}
+
+.tweet-icon {
+  max-height: 34px;
+  margin: 0 1rem;
+}
+
+/* BREAKPOINTS */
+
+@media screen and (min-width: 64em) {
+  .burger {
+    display: none;
+  }
+  
+  .title-span4 {
+    grid-column: span 4;
+  }
+  
+  .title-span3 {
+    grid-column: span 3;
+  }
+  
+  .title-span2 {
+    grid-column: span 2;
+  }
+  
+  .col5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
+  .col4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .col3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .col2 {
+    grid-template-columns: 1fr 1fr;
   }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  .img-wide {
+    display: none;
   }
 }
 
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .burger {
+    display: none;
+  }
+  
+  .title-span4 {
+    grid-column: span 2;
+  }
+  
+  .title-span3 {
+    grid-column: span 2;
+  }
+  
+  .title-span2 {
+    grid-column: span 1;
+  }
+  
+  .col5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .col4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .col3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .col2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .img-first {
+    display: none;
+  }
+
+  .img-wide {
+    grid-column: span 2;
+  }
+
+  .sample-img-post-wide {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .nav {display: none;}
+  
+  .thingsofabove {
+    display: none;
+  }
+  
+  .img-wide {
+    display: none;
+  }
+  
+  .ttwd {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .crsl {
+    display: none;
+  }
+
+  .title-span4 {
+    grid-column: 1;
+  }
+  
+  .title-span3 {
+    grid-column: 1;
+  }
+  
+  .title-span2 {
+    grid-column: 1;
+  }
+  
+  .clients {
+    display: none;
+  }
+
+  .col4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .col3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .col2 {
+    grid-template-columns: 1fr;
+  }
+
+  .flickr {
+    display: none;
+  }
+
+  .newsletter {
+    display: none;
+  }
+
+  .about-us-text {
+    display: none;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials img {
+    margin: 2px;
+  }
+}
